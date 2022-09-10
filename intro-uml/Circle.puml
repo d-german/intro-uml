@@ -6,4 +6,31 @@ class Circle
     + override double Area() 
     + override void Draw()    
 }
+
+note top of Circle
+    The name of the class is Circle
+    (C) mean class
+end note
+
+note left of Circle::_radius
+    red color means private
+    readonly means read only
+    field name is _radius
+    field type is double
+end note
+
+note right of Circle::Circle
+    green color means public
+    constructor name is Circle
+    parameter name is radius
+    parameter type is double
+end note
+
+note right of Circle::Area
+    green color means public
+    method name is Area
+    return type is double
+    Somtimes I might show implmentation:
+        return _radius * _radius * Math.PI
+end note
 @enduml

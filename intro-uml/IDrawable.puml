@@ -1,7 +1,21 @@
 ﻿@startuml
 interface IDrawable
  {
-     void Draw()
+    + void Draw()
  }
 
+note left of IDrawable
+    Section 2 is empty since there are no properties or fields
+end note
+
+note top of IDrawable
+    (I) is used to indicate that this is an interface
+    The name of the interface is IDrawable
+end note
+
+note right of IDrawable::Draw
+    the method name is Draw
+    green means the method is public 
+        ( but remember no access modifiers for interfaces)
+end note
 @enduml

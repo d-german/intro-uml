@@ -5,5 +5,26 @@ abstract class Shape
     + abstract double Area();
     + abstract void Draw();
 }
+note top of Shape
+    A class diagram has 3 sections:
+    1. Class name
+    2. Properties or fields
+    3. Methods  
+end note
 
+note top of Shape
+Section 1
+The class name is Shape and the (A) is the abstract keyword.
+end note
+
+note right of Shape::Point?
+Section 2
+The Position property is a nullable Point.
+Green is public, red is private, and blue is protected.
+end note
+
+note right of Shape::Area()
+Section 3
+The Area and Draw methods are public and abstract.
+end note
 @enduml

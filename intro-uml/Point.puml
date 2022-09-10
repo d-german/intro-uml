@@ -4,4 +4,34 @@ class Point
     + double X { get; set; }
     + double Y { get; set; }
 }
+
+note top of Point
+    This is a class named Point
+    (C) means class
+end note
+
+note right of Point
+    this class only has properties
+    no methods 
+end note
+
+note left of Point::X
+    Green means the property X is public
+   
+        { get; set; }
+        X is a double and is read/write 
+       --------------------------------------------------
+        sometimes you will see
+        
+        { get; private set; }
+        This means the property read is public but write is private
+        
+        {get; init; }
+        This means the property read is public but write is only in the constructor
+            Which is a new feature in C# 9.0 
+            Which means you can only set the property during instantiation
+        
+end note
+
 @enduml
+
