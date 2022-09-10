@@ -1,0 +1,7 @@
+﻿@startuml
+interface IDrawable
+ {
+     void Draw()
+ }
+
+@enduml

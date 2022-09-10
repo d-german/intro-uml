@@ -16,6 +16,6 @@ public class Circle : Shape
 
     public override void Draw()
     {
-        Console.WriteLine("Drawing a circle");
+        Console.WriteLine($"Drawing a circle with radius {_radius} and area {Area()} at {Position}");
     }
 }

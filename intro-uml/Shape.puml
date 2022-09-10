@@ -1,0 +1,9 @@
+﻿@startuml
+abstract class Shape 
+{
+    + Point? Position { get; set; }
+    + abstract double Area();
+    + abstract void Draw();
+}
+
+@enduml

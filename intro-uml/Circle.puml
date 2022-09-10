@@ -1,0 +1,9 @@
+﻿@startuml
+class Circle
+{
+    - readonly double _radius
+    + Circle(double radius)  
+    + override double Area() 
+    + override void Draw()    
+}
+@enduml
