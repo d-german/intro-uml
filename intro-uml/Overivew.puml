@@ -1,0 +1,55 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+
+
+interface IDrawable
+ {
+    + void Draw()
+ }
+ 
+ abstract class Shape 
+ {
+     + Point? Position { get; set; }
+     + abstract double Area();
+     + abstract void Draw();
+ }
+ 
+ class Point
+ {
+     + double X { get; set; }
+     + double Y { get; set; }
+ }
+ 
+ class Circle
+ {
+     - readonly double _radius
+     + Circle(double radius)  
+     + override double Area() 
+     + override void Draw()    
+ }
+Shape o---left-- Point : Composition
+note on link 
+<> diamond means composition
+Shape "has a" Point
+end note
+
+
+
+Shape <|-- Circle : Inheritance
+note on link 
+Arrow means inheritance
+Circle "is a" Shape
+end note
+IDrawable <|.. Shape :   Implements
+note on link 
+- - - means implements
+Shape "can do" IDrawable
+This is bacially the same as inheritance but we normally use "implements" for interfaces
+end note
+
+
+@enduml
+
+
+

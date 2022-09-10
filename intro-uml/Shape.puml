@@ -19,8 +19,11 @@ end note
 
 note right of Shape::Point?
 Section 2
-The Position property is a nullable Point.
-Green is public, red is private, and blue is protected.
+    Green is public, red is private, and blue is protected.
+        { get; set; } means that the property is read/write.
+    The Position property is a nullable Point.
+         Which means that it can be null.
+This demonstrates composition. The Shape class contains a Point.
 end note
 
 note right of Shape::Area()
