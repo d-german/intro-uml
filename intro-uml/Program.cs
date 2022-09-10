@@ -7,3 +7,4 @@ var circle = new Circle(5)
 
 Console.WriteLine(circle.Area());
 circle.Draw();
+Console.WriteLine(circle.Position);
